@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/kkserver/kk-lib/kk"
+	"log"
 	"os"
 )
 
@@ -11,6 +12,8 @@ func help() {
 }
 
 func main() {
+
+	log.SetFlags(log.Llongfile | log.LstdFlags)
 
 	var args = os.Args
 	var name string = ""
